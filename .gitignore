@@ -1,5 +1,3 @@
-*.wasm
-*.mem
 spiro.html
 spiro.js
 spiro.data
@@ -7,6 +5,9 @@ spiro.html.mem
 spiro.wasm
 load_spiro.js
 spiro.data
+zorba.html
+zorba.js
+zorba.html.mem
+zorba.wasm
 zorba
 system
-
