@@ -1198,10 +1198,10 @@
     <div class="emscripten">
       <progress value="0" max="100" id="progress" hidden=1></progress>
     </div>    
-	<textarea id="doc-xml"></textarea>
+	<textarea id="doc-xml" style="width: 600px; height: 400px"></textarea>
 	<input type="button" value="run xquery" onclick="document.getElementById('svg').innerHTML = run_xquery(document.getElementById('doc-xml').value)" />
 	
-	<div id="svg"></div>
+	<div id="svg" style="width: 600px; height: 600px"></div>
     <script type='text/javascript'>
       var statusElement = document.getElementById('status');
       var progressElement = document.getElementById('progress');
@@ -1273,7 +1273,7 @@
           [ fig ]); 
       }
     </script>
-    <script type="text/javascript" src="load_data.js"></script>
+    <script type="text/javascript" src="load_spiro.js"></script>
     <script async type="text/javascript" src="spiro.js"></script>
   </body>
 </html>
