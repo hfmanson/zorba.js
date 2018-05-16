@@ -11,6 +11,7 @@ declare variable $spirograaf:colors as element(colors) :=
         <color dutch="rood" english="red"/>
         <color dutch="groen" english="green"/>
         <color dutch="blauw" english="blue"/>
+        <color dutch="oranje" english="orange"/>
         <color dutch="zwart" english="black"/>
     </colors>
     ;

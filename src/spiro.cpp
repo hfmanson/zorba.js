@@ -1,21 +1,6 @@
-/*
- * Copyright 2006-2008 The FLWOR Foundation.
- * 
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- * http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 #include <iostream>
 #include <sstream>
+#include <fstream>
 
 #include <zorba/zorba.h>
 #include <zorba/store_manager.h>
@@ -23,27 +8,56 @@
 #include <zorba/singleton_item_sequence.h>
 #include <zorba/zorba_exception.h>
 
-
 using namespace zorba;
 
-int
-runQuery(const char* query)
-{
-  void* lStore = StoreManager::getStore();
-  Zorba *lZorba = Zorba::getInstance(lStore);
+XQuery_t lQuery = 0;
+static void* lStore = 0;
+static Zorba* lZorba = 0;
+static char* result = 0;
 
-  XQuery_t lQuery = lZorba->compileQuery(query);
 
-  std::cout << lQuery << std::endl;
+extern "C" {
+	
+const char*
+run_query(const char* fig)
+{	
+//	std::cerr << "fig = " << fig << std::endl;
+	try {
+		if (!lZorba) {
+			std::cout << "Initializing xquery" << std::endl;
+			lStore = StoreManager::getStore();
+			lZorba = Zorba::getInstance(lStore);
+			std::ifstream xq("data/spiro.xq");
+			lQuery = lZorba->compileQuery(xq);
+		}
+		if (result) {
+			// free previous result
+			delete[] result;
+			result = 0;
+		}
+		ItemFactory* lFactory = lZorba->getItemFactory();
 
-  lZorba->shutdown();
-  StoreManager::shutdownStore(lStore);
+		/* The item that is to be bound to the external variable */
+		Item lItem = lFactory->createString(fig);
 
-  return 0;
+		DynamicContext* lCtx = lQuery->getDynamicContext();
+
+		/* Actually perform the binding. */
+		lCtx->setVariable("fig", lItem);
+		
+		// execute the query and make sure that the result is correct
+		Zorba_SerializerOptions lSerOptions;
+		lSerOptions.omit_xml_declaration = ZORBA_OMIT_XML_DECLARATION_YES;
+		std::stringstream lResult;
+		lQuery->execute(lResult, &lSerOptions);
+		const std::string tmp = lResult.str();
+		result = new char[tmp.length() + 1];
+		std::strcpy(result, tmp.c_str());
+		return result;
+	} catch ( ZorbaException& e ) {
+		std::cerr <<  e << std::endl;
+		return "ERROR!";
+	}
 }
 
-int 
-main(int argc, char* argv[])
-{
-  return runQuery("import module namespace spirograaf=\"http://mansoft.nl/xquery/spirograaf\" at \"data/spiro.xqm\";spirograaf:points-to-svg(spirograaf:points(doc(\"data/fig1.xml\")))");
 }
