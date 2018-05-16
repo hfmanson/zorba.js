@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<figuur xmlns="http://mansoft.nl/spiro" ring="105">
+    <wiel tanden="56" kleur="zwart" gat="1" ringtand="0"/>
+    <wiel tanden="56" kleur="rood" gat="2" ringtand="0"/>
+    <wiel tanden="56" kleur="zwart" gat="3" ringtand="0"/>
+    <wiel tanden="56" kleur="rood" gat="4" ringtand="0"/>
+    <wiel tanden="56" kleur="zwart" gat="5" ringtand="0"/>
+    <wiel tanden="56" kleur="rood" gat="6" ringtand="0"/>
+    <wiel tanden="56" kleur="zwart" gat="7" ringtand="0"/>
+</figuur>

@@ -1,0 +1,12 @@
+*.wasm
+*.mem
+spiro.html
+spiro.js
+spiro.data
+spiro.html.mem
+spiro.wasm
+load_spiro.js
+spiro.data
+zorba
+system
+

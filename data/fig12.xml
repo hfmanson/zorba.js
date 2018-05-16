@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<figuur xmlns="http://mansoft.nl/spiro" ring="96">
+    <wiel tanden="80" kleur="blauw" gat="1" ringtand="0"/>
+    <wiel tanden="80" kleur="blauw" gat="2" ringtand="0"/>
+    <wiel tanden="80" kleur="rood" gat="3" ringtand="0"/>
+    <wiel tanden="80" kleur="blauw" gat="4" ringtand="0"/>
+    <wiel tanden="80" kleur="blauw" gat="5" ringtand="0"/>
+    <wiel tanden="80" kleur="rood" gat="6" ringtand="0"/>
+    <wiel tanden="80" kleur="blauw" gat="7" ringtand="0"/>
+    <wiel tanden="80" kleur="blauw" gat="8" ringtand="0"/>
+    <wiel tanden="80" kleur="rood" gat="9" ringtand="0"/>
+    <wiel tanden="80" kleur="blauw" gat="10" ringtand="0"/>
+    <wiel tanden="80" kleur="blauw" gat="11" ringtand="0"/>
+    <wiel tanden="80" kleur="rood" gat="12" ringtand="0"/>
+    <wiel tanden="80" kleur="blauw" gat="13" ringtand="0"/>
+    <wiel tanden="80" kleur="blauw" gat="14" ringtand="0"/>
+</figuur>

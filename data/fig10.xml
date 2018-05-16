@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<figuur xmlns="http://mansoft.nl/spiro" ring="96">
+    <wiel tanden="48" kleur="rood" gat="1" ringtand="0"/>
+    <wiel tanden="48" kleur="rood" gat="2" ringtand="0"/>
+    <wiel tanden="48" kleur="rood" gat="3" ringtand="0"/>
+    <wiel tanden="48" kleur="blauw" gat="4" ringtand="0"/>
+    <wiel tanden="48" kleur="blauw" gat="5" ringtand="0"/>
+    <wiel tanden="48" kleur="blauw" gat="6" ringtand="0"/>
+    <wiel tanden="48" kleur="groen" gat="7" ringtand="0"/>
+    <wiel tanden="48" kleur="groen" gat="6" ringtand="0"/>
+    <wiel tanden="48" kleur="groen" gat="9" ringtand="0"/>
+    <wiel tanden="48" kleur="rood" gat="10" ringtand="0"/>
+    <wiel tanden="48" kleur="rood" gat="11" ringtand="0"/>
+    <wiel tanden="48" kleur="rood" gat="12" ringtand="0"/>
+    <wiel tanden="48" kleur="blauw" gat="13" ringtand="0"/>
+    <wiel tanden="48" kleur="blauw" gat="14" ringtand="0"/>
+    <wiel tanden="48" kleur="blauw" gat="15" ringtand="0"/>
+    <wiel tanden="48" kleur="groen" gat="16" ringtand="0"/>
+    <wiel tanden="48" kleur="groen" gat="17" ringtand="0"/>
+    <wiel tanden="48" kleur="groen" gat="18" ringtand="0"/>
+    <wiel tanden="48" kleur="rood" gat="1" ringtand="24"/>
+    <wiel tanden="48" kleur="rood" gat="2" ringtand="24"/>
+    <wiel tanden="48" kleur="rood" gat="3" ringtand="24"/>
+    <wiel tanden="48" kleur="blauw" gat="4" ringtand="24"/>
+    <wiel tanden="48" kleur="blauw" gat="5" ringtand="24"/>
+    <wiel tanden="48" kleur="blauw" gat="6" ringtand="24"/>
+    <wiel tanden="48" kleur="groen" gat="7" ringtand="24"/>
+    <wiel tanden="48" kleur="groen" gat="6" ringtand="24"/>
+    <wiel tanden="48" kleur="groen" gat="9" ringtand="24"/>
+    <wiel tanden="48" kleur="rood" gat="10" ringtand="24"/>
+    <wiel tanden="48" kleur="rood" gat="11" ringtand="24"/>
+    <wiel tanden="48" kleur="rood" gat="12" ringtand="24"/>
+    <wiel tanden="48" kleur="blauw" gat="13" ringtand="24"/>
+    <wiel tanden="48" kleur="blauw" gat="14" ringtand="24"/>
+    <wiel tanden="48" kleur="blauw" gat="15" ringtand="24"/>
+    <wiel tanden="48" kleur="groen" gat="16" ringtand="24"/>
+    <wiel tanden="48" kleur="groen" gat="17" ringtand="24"/>
+    <wiel tanden="48" kleur="groen" gat="18" ringtand="24"/>
+    <wiel tanden="48" kleur="rood" gat="19" ringtand="24"/>
+    <wiel tanden="48" kleur="rood" gat="20" ringtand="24"/>
+</figuur>

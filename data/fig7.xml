@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<figuur xmlns="http://mansoft.nl/spiro" ring="96">
+    <wiel tanden="40" kleur="zwart" gat="1" ringtand="0"/>
+    <wiel tanden="56" kleur="zwart" gat="1" ringtand="0"/>
+    <wiel tanden="24" kleur="zwart" gat="1" ringtand="0"/>
+    <wiel tanden="32" kleur="zwart" gat="1" ringtand="0"/>
+    <wiel tanden="48" kleur="zwart" gat="1" ringtand="0"/>
+    <wiel tanden="24" kleur="zwart" gat="1" ringtand="8"/>
+    <wiel tanden="32" kleur="zwart" gat="1" ringtand="8"/>
+    <wiel tanden="48" kleur="zwart" gat="1" ringtand="8"/>
+    <wiel tanden="24" kleur="zwart" gat="1" ringtand="16"/>
+    <wiel tanden="32" kleur="zwart" gat="1" ringtand="16"/>
+    <wiel tanden="48" kleur="zwart" gat="1" ringtand="16"/>
+    <wiel tanden="32" kleur="zwart" gat="1" ringtand="24"/>
+    <wiel tanden="48" kleur="zwart" gat="1" ringtand="24"/>
+    <wiel tanden="48" kleur="zwart" gat="1" ringtand="32"/>
+    <wiel tanden="48" kleur="zwart" gat="1" ringtand="40"/>
+    <wiel tanden="48" kleur="zwart" gat="1" ringtand="48"/>
+    <wiel tanden="48" kleur="zwart" gat="1" ringtand="56"/>
+</figuur>
