@@ -1,0 +1,24 @@
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://mansoft.nl/spiro"
+    targetNamespace="http://mansoft.nl/spiro"
+>
+    <xs:element name="figuur">
+        <xs:complexType>
+            <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="wiel"/>
+            </xs:sequence>
+            <xs:attribute name="ring" type="xs:integer" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="wiel">
+        <xs:complexType>
+            <xs:attribute name="tanden" type="xs:integer" use="required"/>
+            <xs:attribute name="kleur" type="xs:string" use="required"/>
+            <xs:attribute name="gat" type="xs:integer" use="required"/>
+            <xs:attribute name="ringtand" type="xs:integer" default="0"/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
