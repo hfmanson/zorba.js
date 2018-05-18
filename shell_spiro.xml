@@ -15,10 +15,10 @@
       <progress value="0" max="100" id="progress" hidden="1"></progress>
     </div>    
 	<textarea id="doc-xml" style="width: 600px; height: 400px"></textarea>
-	<input type="button" value="run xquery" onclick="document.getElementById('svg').innerHTML = run_xquery(document.getElementById('doc-xml').value)" />
-	
+	<input id="run_xquery" type="button" value="run xquery"/>	
 	<div id="svg" style="width: 600px; height: 600px"></div>
     <script type="text/javascript" src="emscripten.js"></script>
+    <script type="text/javascript" src="run_xquery.js"></script>
     <script type="text/javascript" src="load_spiro.js"></script>
     {{{ SCRIPT }}}
   </body>

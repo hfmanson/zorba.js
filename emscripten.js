@@ -62,12 +62,3 @@ if (typeof window === "object") {
 		}
 	}
 }
-
-function run_xquery(fig) {
-	return Module.ccall(
-		'run_query', // name of C function
-		'string', // return type
-		[ 'string' ], // argument types
-		[ fig ]
-	); 
-}
