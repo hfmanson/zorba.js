@@ -17,6 +17,22 @@ static char* result = 0;
 
 
 extern "C" {
+const char*
+get_file(const char* filename)
+{
+	std::ifstream src(filename);
+	std::ostringstream dst;
+	dst << src.rdbuf();
+	const std::string tmp = dst.str();
+	int dstsz = tmp.length() + 1;
+	if (result) {
+		// free previous result
+		delete[] result;
+	}
+	result = new char[dstsz];
+	std::strcpy(result, tmp.c_str());
+	return result;
+}
 	
 const char*
 run_query(const char* fig)
@@ -29,11 +45,6 @@ run_query(const char* fig)
 			lZorba = Zorba::getInstance(lStore);
 			std::ifstream xq("data/spiro.xq");
 			lQuery = lZorba->compileQuery(xq);
-		}
-		if (result) {
-			// free previous result
-			delete[] result;
-			result = 0;
 		}
 		ItemFactory* lFactory = lZorba->getItemFactory();
 
@@ -51,7 +62,13 @@ run_query(const char* fig)
 		std::stringstream lResult;
 		lQuery->execute(lResult, &lSerOptions);
 		const std::string tmp = lResult.str();
-		result = new char[tmp.length() + 1];
+		int dstsz = tmp.length() + 1;
+		if (result) {
+			// free previous result
+			delete[] result;
+			result = 0;
+		}
+		result = new char[dstsz];
 		std::strcpy(result, tmp.c_str());
 		return result;
 	} catch ( ZorbaException& e ) {
